@@ -55,4 +55,4 @@ Planned features:
 Created as a personal game development project.
 
 More updates coming soon!
-I USED AI 
+I USED AI  40-50%
