@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -5,52 +6,65 @@
 }
 
 body {
-    overflow: hidden;
-    background: #17120F;
+    background: #100D0B;
+    color: #D8CBB7;
     font-family: Georgia, serif;
-    color: #E7C99A;
+    overflow: hidden;
 }
 
 #game {
-    width: 100vw;
-    height: 100vh;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
 }
 
 #menu {
-    position: absolute;
+    position: fixed;
     inset: 0;
+    z-index: 10;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background: #17120F;
-    z-index: 2;
+    justify-content: center;
+    gap: 25px;
+
+    background: radial-gradient(
+        circle,
+        #241512 0%,
+        #100D0B 65%,
+        #080706 100%
+    );
+
+    text-align: center;
 }
 
-#menu h1 {
-    font-size: 64px;
-    letter-spacing: 12px;
-    color: #D9A45B;
+h1 {
+    font-size: clamp(42px, 8vw, 76px);
+    letter-spacing: 8px;
+    color: #D8CBB7;
+    text-shadow: 0 0 18px #54231D;
 }
 
 #menu p {
-    margin-top: 12px;
-    letter-spacing: 6px;
-    font-size: 14px;
-}
-
-#playButton {
-    margin-top: 45px;
-    padding: 16px 30px;
-    background: transparent;
-    border: 1px solid #D9A45B;
-    color: #E7C99A;
-    font-family: Georgia, serif;
+    color: #C49A65;
+    font-size: 17px;
     letter-spacing: 2px;
-    cursor: pointer;
 }
 
-#playButton:hover {
-    background: #D9A45B;
-    color: #17120F;
+button {
+    padding: 15px 35px;
+    background: transparent;
+    border: 1px solid #8B4434;
+    color: #D8CBB7;
+    font-size: 15px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #54231D;
+    border-color: #C49A65;
+    color: #FFFFFF;
 }
